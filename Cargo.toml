@@ -1,0 +1,19 @@
+[workspace]
+resolver = "2"
+members = ["crates/aero_physics", "crates/aero_demo"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+bevy = { version = "0.20.1", default-features = false, features = [
+    "std", "multi_threaded", "bevy_winit", "bevy_clipboard", "default_font", "x11", "wayland", "custom_cursor", "sysinfo_plugin",
+    "async_executor", "bevy_asset", "bevy_log", "bevy_state", "reflect_auto_register",
+    "3d_bevy_render", "scene", "picking", "ui_api", "ui_bevy_render", "bevy_ui_widgets",
+    "bevy_gltf", "bevy_text", "bevy_gizmos", "png",
+] }
+avian3d = "0.8.0"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

@@ -1,0 +1,12 @@
+[package]
+name = "aero_physics"
+description = "Aerodynamic physics for Bevy: a port of godot_aerodynamic_physics"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+bevy.workspace = true
+avian3d.workspace = true
+serde.workspace = true
+serde_json.workspace = true
